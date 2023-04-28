@@ -9,7 +9,7 @@ import { xmlmsg1,xmlmsg2 } from "../templates.js";
 config();
 
 const base = {
-  url: 'https://qyapi.weixin.qq.com/cgi-bin',
+  url: process.env.QY_API,
 };
 
 export default class Message {
