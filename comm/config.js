@@ -2,7 +2,7 @@ import request from "request";
 
 let accessToken = { token: 'NO_TICKET', expire: 0 };
 
-const baseURL = 'https://qyapi.weixin.qq.com/cgi-bin';
+const baseURL = process.env.QY_API;
 
 
 function newAccessToken() {
